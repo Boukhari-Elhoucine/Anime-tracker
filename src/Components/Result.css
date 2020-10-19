@@ -1,0 +1,7 @@
+.result {
+  margin-right: 10px;
+}
+.result {
+  overflow-y: auto;
+  max-height: 90vh;
+}

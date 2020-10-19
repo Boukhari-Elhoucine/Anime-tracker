@@ -1,0 +1,44 @@
+.anime {
+  position: relative;
+  color: #d4dbf5;
+  transition: all 300ms;
+  width: 210px;
+  margin: 20px;
+  height: 400px;
+}
+.anime h2 {
+  font-size: 1.05em;
+}
+.anime p {
+  font-size: 0.85em;
+}
+.anime:hover {
+  transform: scale(1.04);
+}
+.anime > img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.anime__icons {
+  display: none;
+}
+.anime:hover > .anime__icons {
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  display: flex;
+  justify-content: space-between;
+}
+#completed__button {
+  color: #00ff00;
+}
+#completed__button:hover {
+  background-color: rgba(0, 255, 0, 0.02);
+}
+#watching {
+  color: #54d2d2;
+}
+#watching:hover {
+  background-color: rgba(84, 210, 210, 0.02);
+}

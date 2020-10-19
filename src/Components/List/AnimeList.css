@@ -1,0 +1,32 @@
+.animelist__search {
+  display: flex;
+  justify-content: flex-end;
+}
+.animelist {
+  overflow: hidden;
+}
+.animelist__posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4dbf5;
+  border-radius: 1rem;
+}
+.search > input {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+}
+.indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

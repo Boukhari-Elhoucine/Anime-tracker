@@ -1,0 +1,15 @@
+.login__form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.input {
+  width: 100%;
+  margin: 20px 0 !important;
+  padding: 20px;
+}
+@media (max-width: 568px) {
+  .login__form {
+    width: 80%;
+  }
+}

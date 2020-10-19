@@ -1,0 +1,24 @@
+.profile {
+  display: flex;
+}
+.profile__left {
+  flex: 1;
+}
+.profile__right {
+  color: white;
+  margin-left: 1rem;
+  flex: 4;
+}
+.profile__info {
+  padding: 10px;
+}
+.profile__upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile__image {
+  height: 300px !important;
+  width: 100% !important;
+  object-fit: contain !important;
+}

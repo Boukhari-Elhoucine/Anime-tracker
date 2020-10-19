@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.header__logo {
+  color: #d4dbf5;
+  text-decoration: none;
+}
+.header__auth {
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 568px) {
+  .header__logo {
+    font-size: 0.8em;
+  }
+  .header {
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.myanime {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+.myanime > img {
+  height: 300px;
+  object-fit: contain;
+}
+.myanime__info {
+  margin-left: 1rem;
+}

@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AnimeList from "./Components/List/AnimeList";
+import Login from "./Components/auth/Login";
+import SignUp from "./Components/auth/SignUp";
+import Profile from "./Components/Profile";
+import { requests } from "./Components/requests";
 function App() {
+  const [selectedOption, setSelectedOption] = useState(requests.fetchTopAiring);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Nav setSelectedOption={setSelectedOption} />
+            <AnimeList
+              selectedOption={selectedOption}
+              setSelectedOption={setSelectedOption}
+            />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/profile" component={Profile} />
+        </Switch>
+      </Router>
     </div>
   );
 }
